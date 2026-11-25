@@ -1,0 +1,10 @@
+# PyDESeq2 is pinned because the current 0.7.0 release requires Python >=3.12.
+numpy>=2.0,<3.0
+pandas>=2.2,<3.0
+scipy>=1.12,<2.0
+matplotlib>=3.9,<4.0
+seaborn>=0.13,<0.14
+scikit-learn>=1.4,<2.0
+pydeseq2==0.5.4
+jupyterlab>=4.2,<5.0
+ipykernel>=6.29,<8.0
