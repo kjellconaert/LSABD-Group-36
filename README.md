@@ -5,7 +5,7 @@ This repository contains a Jupyter notebook, a Python requirements file, and the
 
 ## 1. Project layout
 ```text
-LSABD_Part1/
+LSABD_dataset2_project/
 ├── data/
 │   ├── GSE80655_counts.csv
 │   └── GSE80655_metadata.csv
