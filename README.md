@@ -4,6 +4,7 @@ This repository contains a Jupyter notebook, a Python requirements file, and the
 
 
 ## 1. Project layout
+```text
 LSABD_Part1/
 ├── data/
 │   ├── GSE80655_counts.csv
@@ -15,7 +16,7 @@ LSABD_Part1/
 ├── notebook.ipynb
 ├── requirements.txt
 └── README.md
-
+```
 
 The two supplied CSV files are included in `data/`. The PDFs do not need to be in this directory; they are referenced in the notebook's methodology notes.
 
@@ -23,20 +24,21 @@ The two supplied CSV files are included in `data/`. The PDFs do not need to be i
 ## 2. Create a Python 3.11 environment (Fedora Linux / KDE)
 The notebook checks that it is running with Python 3.11. On Fedora, install the versioned interpreter without changing the system `python3`:
 
-
+```bash
 sudo dnf install python3.11
 python3.11 --version
-
+```
 
 Create and activate a project-specific virtual environment from this directory:
 
+```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
 python --version
 python -m pip install --upgrade pip wheel
 python -m pip install -r requirements.txt
 python -m ipykernel install --user --name lsabd_dataset2 --display-name "Python 3.11 (LSABD Dataset 2)"
-
+```
 
 Start JupyterLab from the activated environment:
 
@@ -50,6 +52,7 @@ In your IDE (e.g. VSCodium), open `notebook.ipynb` and select the kernel named *
 ### Windows alternative
 Install Python 3.11, then from PowerShell in the project directory run:
 
+```PowerShell
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python --version
@@ -57,7 +60,7 @@ python -m pip install --upgrade pip wheel
 python -m pip install -r requirements.txt
 python -m ipykernel install --user --name lsabd_dataset2 --display-name "Python 3.11 (LSABD Dataset 2)"
 python -m jupyter lab
-
+```
 
 ## 3. Run the notebook
 Run the notebook from top to bottom. Do not skip the data validation cells.
