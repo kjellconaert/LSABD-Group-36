@@ -62,8 +62,35 @@ python -m ipykernel install --user --name lsabd_dataset2 --display-name "Python 
 python -m jupyter lab
 ```
 
-## 3. Run the notebook
-Run the notebook from top to bottom. Do not skip the data validation cells.
+## 3. HOW TO OPEN AND PREPARE TO RUN
+### Linux
+
+### Windows 11 (Ny-Aina)
+1. Open the folder of the group project.
+2. Right-click in the folder and choose 'Open in terminal'
+3. run the following to activate the previously made environment + open jupyter
+```PowerShell
+.\.venv\Scripts\Activate.ps1
+python -m jupyter lab
+```
+4. **Do not forget to choose the custom kernel (LSABD Dataset2) in jupyter in the upper right corner**
+5. Now you can run the notebook from top to bottom. Do not skip the data validation cells.
+
+### Windows 10 (Louise)
+1. Open the folder of the group project.
+2. In file explorer copy the path to the folder (link at the top)
+3. Open CMD (EN: command-line / NL:opdrachtprompt)
+4. type: CD [and paste here the path here that you copied earlier] -> you should normally be in the project folder now.
+4. run the following to activate the previously made environment + open jupyter:
+```PowerShell
+.\.venv\Scripts\Activate.ps1
+python -m jupyter lab
+```
+5. **Don't forget to choose the custom kernel (LSABD Dataset2) in jupyter in the upper right corner**
+6. Now you can run the notebook from top to bottom. Do not skip the data validation cells.
+
+### MacOS
+No group member used MacOS so not included.
 
 
 ## 4. Sources used
