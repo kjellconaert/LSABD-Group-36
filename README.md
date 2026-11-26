@@ -64,6 +64,7 @@ python -m jupyter lab
 
 ## 3. HOW TO OPEN AND PREPARE TO RUN
 ### Linux
+*Will be added later*
 
 ### Windows 11 (Ny-Aina)
 1. Open the folder of the group project.
@@ -80,14 +81,15 @@ python -m jupyter lab
 1. Open the folder of the group project.
 2. In file explorer copy the path to the folder (link at the top)
 3. Open CMD (EN: command-line / NL:opdrachtprompt)
-4. type: CD [and paste here the path here that you copied earlier] -> you should normally be in the project folder now.
-4. run the following to activate the previously made environment + open jupyter:
+4. Type: CD [and paste here the path here that you copied earlier]
+5. Press enter
+6. run the following to activate the previously made environment + open jupyter:
 ```PowerShell
 .\.venv\Scripts\Activate.ps1
 python -m jupyter lab
 ```
-5. **Don't forget to choose the custom kernel (LSABD Dataset2) in jupyter in the upper right corner**
-6. Now you can run the notebook from top to bottom. Do not skip the data validation cells.
+7. **Don't forget to choose the custom kernel (LSABD Dataset2) in jupyter in the upper right corner**
+8. Now you can run the notebook from top to bottom. Do not skip the data validation cells.
 
 ### MacOS
 No group member used MacOS so not included.
