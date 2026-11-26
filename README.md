@@ -3,7 +3,7 @@
 This repository contains a Jupyter notebook, a Python requirements file, and the instructions needed to run it.
 
 
-## 1. Project layout
+## 1. Initial project layout
 ```text
 LSABD_dataset2_project/
 ├── data/
@@ -21,8 +21,8 @@ LSABD_dataset2_project/
 The two supplied CSV files are included in `data/`. The PDFs do not need to be in this directory; they are referenced in the notebook's methodology notes.
 
 
-## 2. Create a Python 3.11 environment (Fedora Linux / KDE)
-The notebook checks that it is running with Python 3.11. On Fedora, install the versioned interpreter without changing the system `python3`:
+## 2. Create a Python 3.11 environment (Fedora Linux / KDE) (Has to be done one time only)
+### Linux redhat (Fedora):
 
 ```bash
 sudo dnf install python3.11
@@ -46,11 +46,11 @@ Start JupyterLab from the activated environment:
 python -m jupyter lab
 ```
 
-In your IDE (e.g. VSCodium), open `notebook.ipynb` and select the kernel named **Python 3.11 (LSABD Dataset 2)**. Verify the kernel by running the first code cell. The notebook also prints the active interpreter path.
+In your IDE (e.g. VSCodium or jupyter lab), open `notebook.ipynb` and select the kernel named **Python 3.11 (LSABD Dataset 2)**. Verify the kernel by running the first code cell. The notebook also prints the active interpreter path.
 
 
 ### Windows alternative
-Install Python 3.11, then from PowerShell in the project directory run:
+Install Python 3.11 from the official python website (Don't forget to check `ADD TO PATH`), then from PowerShell or CMD in the project directory run:
 
 ```PowerShell
 py -3.11 -m venv .venv
@@ -81,9 +81,9 @@ python -m jupyter lab
 1. Open the folder of the group project.
 2. In file explorer copy the path to the folder (link at the top)
 3. Open CMD (EN: command-line / NL:opdrachtprompt)
-4. Type: CD [and paste here the path here that you copied earlier]
+4. Type: cd [and paste here the path here that you copied earlier]
 5. Press enter
-6. run the following to activate the previously made environment + open jupyter:
+6. Run the following to activate the previously made environment + open jupyter:
 ```PowerShell
 .\.venv\Scripts\Activate.ps1
 python -m jupyter lab
